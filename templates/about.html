@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %} About {%endblock%}
+
+{% block content %}
+
+<h1>Student List</h1>
+<table border="2">
+<tr>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>COURSE</th>
+</tr>
+{%for i in students%}
+<tr>
+    <td>{{i.id}}</td>
+    <td>{{i.name}}</td>
+    <td>{{i.course}}</td>
+
+</tr>
+{%endfor%}
+</table>
+<br>
+<button><a href="/delete">DELETE</a></button>
+<button><a href="/update">UPDATE</a></button>
+{% endblock %}
+
