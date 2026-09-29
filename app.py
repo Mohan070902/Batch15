@@ -10,7 +10,7 @@ SECRET_KEY = "my-secret-key"
 def home():
     return render_template("home.html")
 print("Python")
-
+print("Java")
  
  
 @app.route("/login", methods=["POST"]) 
